@@ -119,10 +119,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"epB2":[function(require,module,exports) {
 var $siteList = $('.siteList');
-var $lastLi = $('.lastSite'); // const x = localStorage.getItem('x')
-// const xObject = JSON.parse(x)
-
-var hashMap = JSON.parse(localStorage.x) || [{
+var $lastLi = $('.lastSite');
+var x = localStorage.getItem('x');
+var xObject = JSON.parse(x);
+var hashMap = xObject || [{
   logo: 'A',
   url: 'http://www.acfun.cn'
 }, {
@@ -184,4 +184,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.cb37d9a1.js.map
+//# sourceMappingURL=main.9eafb1d1.js.map
