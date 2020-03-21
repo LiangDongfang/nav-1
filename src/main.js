@@ -1,8 +1,8 @@
 const $siteList = $('.siteList')
 const $lastLi = $('.lastSite')
-// const x = localStorage.getItem('x')
-// const xObject = JSON.parse(x)
-const hashMap = JSON.parse(localStorage.x) || [
+const x = localStorage.getItem('x')
+const xObject = JSON.parse(x)
+const hashMap = xObject || [
   { logo: 'A', url: 'http://www.acfun.cn' },
   { logo: 'B', url: 'http://www.bilibili.com' }
 ]
